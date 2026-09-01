@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12151d">
+  <meta name="description" content="L'Atelier Gourmet — Food & Drink Menu & Opening Hour Sign featuring artisan starters, main courses, handmade pastas, gourmet burgers, fresh drinks, specialty coffee, and decadent desserts.">
+  <title>L'Atelier Gourmet — Food & Drink Restaurant Menu</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP APPLICATION HEADER & CONTROLS
+       ======================================================================== -->
+  <header class="app-header" id="app-header">
+    <a href="#" class="brand" id="brand-link" data-brand-style="style1" aria-label="L'Atelier Gourmet Home">
+      <div class="brand-crest" id="brand-crest-el" aria-hidden="true">⚜</div>
+      <div class="brand-text">
+        <span class="brand-name" id="brand-name-el">L'Atelier Gourmet</span>
+        <span class="brand-tagline" id="brand-tagline-el">FOOD & DRINK MENU · EST. 2023</span>
+      </div>
+    </a>
+
+    <!-- Center Quick Navigation Anchor Links -->
+    <nav class="header-nav" aria-label="Menu Sections">
+      <a href="#section-starters" class="nav-link">Starters</a>
+      <a href="#section-mains" class="nav-link">Mains</a>
+      <a href="#section-pasta" class="nav-link">Pasta</a>
+      <a href="#section-specials" class="nav-link">Breakfast & Specials</a>
+      <a href="#section-burgers" class="nav-link">Burgers</a>
+      <a href="#section-drinks" class="nav-link">Drinks</a>
+      <a href="#section-desserts" class="nav-link">Desserts</a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <!-- Header Sample Designs Picker Button -->
+      <button class="btn-design-samples" id="btn-design-samples" type="button" title="Browse Top Header Sample Designs">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <span>Top Designs</span>
+      </button>
+
+      <!-- Audio Toggle -->
+      <button class="icon-btn" id="btn-audio-toggle" type="button" aria-label="Toggle sound effects" title="Sound Effects (ON/OFF)">
+        <svg id="icon-sound-on" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        <svg id="icon-sound-off" viewBox="0 0 24 24" style="display:none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+      </button>
+
+      <!-- Theme Switcher -->
+      <button class="icon-btn" id="btn-theme-toggle" type="button" aria-label="Toggle dark/light theme" title="Switch Theme (Dark / Parchment)">
+        <svg id="icon-theme-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <svg id="icon-theme-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+
+      <!-- Cart Button -->
+      <button class="icon-btn" id="btn-cart-toggle" type="button" aria-label="View Order" title="Your Order">
+        <svg viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        <span class="cart-badge" id="cart-badge-count">0</span>
+      </button>
+
+      <!-- Reservation Action -->
+      <button class="btn-reserve" id="btn-open-reserve" type="button">Book a Table</button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       EDITORIAL RESTAURANT MENU (Main Reference Layout)
+       ======================================================================== -->
+  <main class="editorial-menu-view" id="editorial-menu-view" aria-label="Restaurant Menu Board">
+    
+
+
+    <!-- Grand Signboard Banner (from Reference Image) -->
+    <div class="board-grand-sign">
+      <h2 class="grand-sign-title">RESTAURANT MENU</h2>
+      <p class="grand-sign-subtitle">FOOD & DRINK MENU & OPENING HOUR SIGN</p>
+    </div>
+
+    <!-- The Master Menu Board (Exact replica of reference template) -->
+    <article class="menu-board-canvas" id="menu-board-canvas">
+      
+      <!-- Top Masthead Header -->
+      <header class="board-header">
+        <div class="board-header-kicker-row">
+          <span class="kicker-line"></span>
+          <span class="board-kicker">YOUR RESTAURANT'S NAME</span>
+          <span class="kicker-line"></span>
+        </div>
+
+        <div class="board-header-main-row">
+          <!-- Left Badge Seal: BEST FOOD / EST 2023 / THE BEST CAFE IN YOUR CITY -->
+          <div class="header-badge-left">
+            <div class="seal-circle">
+              <span>BEST</span>
+              <span>FOOD</span>
+            </div>
+            <div class="seal-text">
+              <strong>EST 2023</strong>
+              <span>THE BEST CAFE IN YOUR CITY</span>
+            </div>
+          </div>
+
+          <!-- Middle: Huge MENU & Subtitle + Search Bar -->
+          <div class="header-center-title">
+            <h1 class="board-main-title">MENU</h1>
+            <p class="board-subtitle">THE BEST CAFE IN YOUR CITY</p>
+            
+            <div class="middle-search-wrapper">
+              <div class="middle-search-bar">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" id="middle-menu-search" placeholder="Search dishes, drinks, ingredients..." aria-label="Search Menu">
+                <button class="search-clear-btn" id="btn-clear-search" type="button" aria-label="Clear Search" style="display:none;">✕</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Badge Seal: OPEN HOURS / 3PM - 10PM DAILY / DINING -->
+          <div class="header-badge-right">
+            <div class="seal-text">
+              <strong>OPEN HOURS</strong>
+              <span>3PM - 10PM DAILY</span>
+            </div>
+            <div class="seal-circle seal-circle-dining">
+              <span>DINING</span>
+              <span>LOUNGE</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 3-Column Master Grid -->
+      <div class="board-grid" id="board-grid">
+        
+        <!-- ================= Column 1: Starters & Fresh Drinks ================= -->
+        <div class="board-col">
+          <!-- Starters Photo Strip Top -->
+          <div class="photo-strip">
+            <div class="photo-item" data-dish-id="chicken-parmesan-starter" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?auto=format&fit=crop&w=600&q=80" alt="Chicken Parmesan Starter" loading="lazy">
+              <div class="photo-label">Chicken Parmesan · $10</div>
+            </div>
+            <div class="photo-item" data-dish-id="fish-chip-cheese" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1579208030886-b937da0925dc?auto=format&fit=crop&w=600&q=80" alt="Fish Chip Cheese" loading="lazy">
+              <div class="photo-label">Fish Chip Cheese · $10</div>
+            </div>
+            <div class="photo-item" data-dish-id="potatoes-wedge" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="Potato Wedges" loading="lazy">
+              <div class="photo-label">Potato Wedges · $10</div>
+            </div>
+            <div class="photo-item" data-dish-id="cheese-chips" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" alt="Cheese Chips" loading="lazy">
+              <div class="photo-label">Cheese Chips · $10</div>
+            </div>
+          </div>
+
+          <!-- Section: Food Starter (Left Column List) -->
+          <section class="menu-section" id="section-starters" data-category="Food Starter">
+            <div class="section-header">
+              <h2 class="section-title">FOOD STARTER</h2>
+              <span class="section-tag">APPETIZERS</span>
+            </div>
+            <div class="menu-item-list" id="col1-starters-list"></div>
+          </section>
+
+          <!-- Section: Fresh Drinks -->
+          <section class="menu-section" id="section-drinks" data-category="Fresh Drinks">
+            <div class="section-header">
+              <h2 class="section-title">FRESH DRINKS</h2>
+              <span class="section-tag">$5 EACH</span>
+            </div>
+            <div class="drinks-dual-grid" id="col1-drinks-grid"></div>
+
+            <!-- Fresh Drinks Photo Preview -->
+            <div class="photo-strip" style="margin-top:10px;">
+              <div class="photo-item" data-dish-id="fresh-juice" title="Click to view details">
+                <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80" alt="Fresh Juice" loading="lazy">
+                <div class="photo-label">Fresh Squeezed Juice · $5</div>
+              </div>
+              <div class="photo-item" data-dish-id="lemonade" title="Click to view details">
+                <img src="https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?auto=format&fit=crop&w=600&q=80" alt="Artisan Lemonade" loading="lazy">
+                <div class="photo-label">Artisan Lemonade · $5</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ================= Column 2: Main Course, Breakfast, Pasta, Coffee ================= -->
+        <div class="board-col">
+          <!-- Section: Main Course -->
+          <section class="menu-section" id="section-mains" data-category="Main Course">
+            <div class="section-header">
+              <h2 class="section-title">MAIN COURSE</h2>
+              <span class="section-tag">CHEF'S SELECTION</span>
+            </div>
+            <div class="menu-item-list" id="col2-mains-list"></div>
+          </section>
+
+          <!-- Centerpiece Feature: All Day Breakfast With Coffee -->
+          <div class="centerpiece-card" id="section-specials" data-dish-id="all-day-breakfast" title="Click to inspect dish">
+            <div class="centerpiece-badge">$10</div>
+            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=80" alt="All Day Breakfast with Coffee" loading="lazy">
+            <div class="centerpiece-content">
+              <h3 class="centerpiece-title">ALL DAY BREAKFAST WITH COFFEE</h3>
+              <p class="centerpiece-desc">Sunny farm eggs, Cumberland sausage, smoked bacon, buttered mushrooms, baked beans, grilled tomato, sourdough toast & artisan brewed coffee.</p>
+            </div>
+          </div>
+
+          <!-- Section: Pasta -->
+          <section class="menu-section" id="section-pasta" data-category="Pasta">
+            <div class="section-header">
+              <h2 class="section-title">PASTA</h2>
+              <span class="section-tag">HANDMADE</span>
+            </div>
+            <!-- Pasta Feature Photo -->
+            <div class="photo-item" style="height:120px;" data-dish-id="meat-balls-pasta" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Meat Balls Pasta" loading="lazy">
+              <div class="photo-label">Meat Balls Pasta · Slow-Simmered Pomodoro</div>
+            </div>
+            <div class="menu-item-list" id="col2-pasta-list"></div>
+          </section>
+
+          <!-- Section: Special Menu -->
+          <section class="menu-section" data-category="Special Menu">
+            <div class="section-header">
+              <h2 class="section-title">SPECIAL MENU</h2>
+              <span class="section-tag">HOUSE SPECIALS</span>
+            </div>
+            <div class="menu-item-list" id="col2-specials-list"></div>
+          </section>
+
+          <!-- Section: House Coffee -->
+          <section class="menu-section" data-category="House Coffee">
+            <div class="section-header">
+              <h2 class="section-title">HOUSE COFFEE</h2>
+              <span class="section-tag">$5 EACH</span>
+            </div>
+            <div class="drinks-dual-grid" id="col2-coffee-grid"></div>
+          </section>
+        </div>
+
+        <!-- ================= Column 3: Food Starter (cont.), Burgers, Desserts ================= -->
+        <div class="board-col">
+          <!-- Starters Photo Strip (Right Top) -->
+          <div class="photo-strip">
+            <div class="photo-item" data-dish-id="garlic-bread" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?auto=format&fit=crop&w=600&q=80" alt="Garlic Bread" loading="lazy">
+              <div class="photo-label">Garlic Baguette · $10</div>
+            </div>
+            <div class="photo-item" data-dish-id="chicken-with-salad" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Grilled Chicken Salad" loading="lazy">
+              <div class="photo-label">Chicken & Salad · $10</div>
+            </div>
+            <div class="photo-item" data-dish-id="mac-n-cheese" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80" alt="Baked Mac n Cheese" loading="lazy">
+              <div class="photo-label">Mac n Cheese · $10</div>
+            </div>
+            <div class="photo-item" data-dish-id="red-velvet-cheese-cake" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=600&q=80" alt="Red Velvet Cake" loading="lazy">
+              <div class="photo-label">Red Velvet Cake · $10</div>
+            </div>
+          </div>
+
+          <!-- Section: Burger -->
+          <section class="menu-section" id="section-burgers" data-category="Burger">
+            <div class="section-header">
+              <h2 class="section-title">BURGER</h2>
+              <span class="section-tag">PRIME ANGUS</span>
+            </div>
+            <!-- Burger Feature Photo -->
+            <div class="photo-item" style="height:140px;" data-dish-id="the-classic-burger" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="The Classic Burger" loading="lazy">
+              <div class="photo-label">The Classic Burger · Cheddar & Secret Sauce</div>
+            </div>
+            <div class="menu-item-list" id="col3-burgers-list"></div>
+          </section>
+
+          <!-- Section: Dessert Menu -->
+          <section class="menu-section" id="section-desserts" data-category="Dessert Menu">
+            <div class="section-header">
+              <h2 class="section-title">DESSERT MENU</h2>
+              <span class="section-tag">SWEET CONFECTIONS</span>
+            </div>
+            <!-- Dessert Platter Photo -->
+            <div class="photo-item" style="height:150px;" data-dish-id="classic-tiramisu" title="Click to view details">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80" alt="Artisan Desserts" loading="lazy">
+              <div class="photo-label">Classic Tiramisu & Artisan Pastries</div>
+            </div>
+            <div class="menu-item-list" id="col3-desserts-list"></div>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Bottom Board Footer Information -->
+      <footer class="board-footer">
+        <div>FOLLOW US: <strong id="footer-social">@YOURRESTAURANT</strong></div>
+        <div id="footer-address">1234 UTOWN CITY, CAMBRIDGE, METROPOLIS 201200</div>
+        <div id="footer-web">WWW.YOURWEBSITE.COM</div>
+        <button class="footer-print-btn" id="btn-print-menu" type="button" aria-label="Print Menu Flyer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+          Print Menu
+        </button>
+      </footer>
+    </article>
+  </main>
+
+  <!-- ========================================================================
+       LIVE CART & ORDER DRAWER
+       ======================================================================== -->
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <h2 class="cart-title" id="cart-drawer-title">Your Order Summary</h2>
+      <button class="close-button" id="btn-close-cart" type="button" aria-label="Close Order Drawer">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"></path></svg>
+      </button>
+    </div>
+
+    <div class="cart-items-container" id="cart-items-container">
+      <div class="empty-cart-state" id="empty-cart-state">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        <p style="font-family:var(--serif); font-size:1.1rem; margin:0;">Your dining tray is empty</p>
+        <span style="font-size:0.75rem;">Click any dish or drink on the menu to view details and add items to your order.</span>
+      </div>
+      <div id="cart-items-list" style="display:flex; flex-direction:column; gap:10px;"></div>
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Tax (8%)</span>
+        <span id="cart-tax">$0.00</span>
+      </div>
+      <div class="cart-summary-line total">
+        <span>Total Amount</span>
+        <span id="cart-grand-total" style="color:var(--accent-gold);">$0.00</span>
+      </div>
+      <button class="btn-checkout" id="btn-checkout" type="button" disabled>Proceed to Order ($0.00)</button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MODAL: DISH QUICK VIEW & INSPECTOR
+       ======================================================================== -->
+  <div class="modal-backdrop" id="dish-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="close-button" id="btn-close-dish-modal" type="button" aria-label="Close Dish Details">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"></path></svg>
+      </button>
+
+      <img class="modal-dish-img" id="modal-dish-image" src="" alt="Dish Image">
+
+      <p class="eyebrow" id="modal-dish-category">FOOD STARTER</p>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px;">
+        <h2 style="margin:0; font-family:var(--serif); font-size:1.8rem;" id="modal-dish-title">Dish Title</h2>
+        <span style="font-family:var(--serif); font-size:1.8rem; font-weight:700; color:var(--accent-gold);" id="modal-dish-price">$10</span>
+      </div>
+
+      <p style="font-size:0.9rem; line-height:1.6; color:var(--ink-soft); margin-bottom:18px;" id="modal-dish-description"></p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:14px; background:rgba(0,0,0,0.25); border-radius:10px; margin-bottom:20px;">
+        <div>
+          <span style="font-size:0.6rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:var(--ink-muted); display:block; margin-bottom:3px;">Calories</span>
+          <strong id="modal-dish-calories" style="font-size:0.85rem;">480 kcal</strong>
+        </div>
+        <div>
+          <span style="font-size:0.6rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:var(--ink-muted); display:block; margin-bottom:3px;">Preparation Time</span>
+          <strong id="modal-dish-preptime" style="font-size:0.85rem;">12 mins</strong>
+        </div>
+      </div>
+
+      <div style="margin-bottom:24px;">
+        <span style="font-size:0.6rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:var(--ink-muted); display:block; margin-bottom:8px;">Allergens & Badges</span>
+        <div class="dish-meta-tags" id="modal-dish-tags"></div>
+      </div>
+
+      <button class="btn-checkout" id="modal-btn-add-cart" type="button" style="width:100%;">Add to Order</button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: TABLE RESERVATION
+       ======================================================================== -->
+  <div class="modal-backdrop" id="reservation-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="close-button" id="btn-close-reservation-modal" type="button" aria-label="Close Reservation">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"></path></svg>
+      </button>
+
+      <p class="eyebrow">Table Booking</p>
+      <h2 style="margin:0 0 6px; font-family:var(--serif); font-size:1.8rem;">Reserve a Table</h2>
+      <p style="font-size:0.85rem; color:var(--ink-soft); margin:0 0 20px;">Experience fine dining at L'Atelier Gourmet. Open daily 3:00 PM – 10:00 PM.</p>
+
+      <form id="reservation-form">
+        <div class="modal-form-group">
+          <label for="res-name">Full Name</label>
+          <input type="text" id="res-name" required placeholder="Lord/Lady Alexander Sterling">
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+          <div class="modal-form-group">
+            <label for="res-phone">Phone Number</label>
+            <input type="tel" id="res-phone" required placeholder="+1 (555) 000-0000">
+          </div>
+          <div class="modal-form-group">
+            <label for="res-guests">Number of Guests</label>
+            <select id="res-guests">
+              <option value="1">1 Guest (Solo Dining)</option>
+              <option value="2" selected>2 Guests (Intimate Table)</option>
+              <option value="4">4 Guests (Family / Friends)</option>
+              <option value="6">6 Guests (Party)</option>
+              <option value="8">8+ Guests (Private Room)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+          <div class="modal-form-group">
+            <label for="res-date">Date</label>
+            <input type="date" id="res-date" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="res-time">Seating Time</label>
+            <select id="res-time">
+              <option value="15:00">3:00 PM (Afternoon)</option>
+              <option value="17:00">5:00 PM (Early Dinner)</option>
+              <option value="19:00" selected>7:00 PM (Prime Dinner)</option>
+              <option value="20:30">8:30 PM (Late Dinner)</option>
+              <option value="21:30">9:30 PM (Cocktails & Bites)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="modal-form-group">
+          <label for="res-notes">Special Requests (Allergies, Anniversaries, Seating Preference)</label>
+          <textarea id="res-notes" rows="2" placeholder="e.g. Window booth, celebrating an anniversary..."></textarea>
+        </div>
+
+        <button class="btn-checkout" type="submit" style="width:100%; margin-top:8px;">Confirm Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: TOP HEADER SAMPLE DESIGNS
+       ======================================================================== -->
+  <div class="modal-backdrop" id="designs-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog" style="max-width:680px;">
+      <button class="close-button" id="btn-close-designs-modal" type="button" aria-label="Close Sample Designs">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"></path></svg>
+      </button>
+
+      <p class="eyebrow">Visual Brand Architecture</p>
+      <h2 style="margin:0 0 6px; font-family:var(--serif); font-size:1.8rem;">Top Header Sample Designs</h2>
+      <p style="font-size:0.85rem; color:var(--ink-soft); margin:0 0 22px;">Select any luxury sample design below to instantly apply it to your top navigation bar.</p>
+
+      <div class="sample-designs-grid" id="sample-designs-container">
+        <!-- Sample 1: Imperial Gold Crest -->
+        <div class="sample-design-card active" data-style-id="style1">
+          <div class="sample-preview-header">
+            <div class="brand brand-sample-1">
+              <div class="brand-crest">⚜</div>
+              <div class="brand-text">
+                <span class="brand-name">L'Atelier Gourmet</span>
+                <span class="brand-tagline">FOOD & DRINK MENU · EST. 2023</span>
+              </div>
+            </div>
+            <button class="btn-apply-sample" type="button">Active</button>
+          </div>
+          <div class="sample-desc"><strong>Option 1: Imperial Gold Crest</strong> — Refined gold Fleur-de-lis seal with classical Playfair Display typography and golden uppercase tracking.</div>
+        </div>
+
+        <!-- Sample 2: Michelin 3-Star Grand Palais -->
+        <div class="sample-design-card" data-style-id="style2">
+          <div class="sample-preview-header">
+            <div class="brand brand-sample-2">
+              <div class="brand-crest-crown">👑</div>
+              <div class="brand-text">
+                <div style="display:flex; align-items:center; gap:6px;">
+                  <span class="brand-name" style="font-size:1.25rem;">L'Atelier Gourmet</span>
+                  <span style="color:#e5b95f; font-size:0.75rem; letter-spacing:2px;">★★★</span>
+                </div>
+                <span class="brand-tagline" style="color:#50e3c2;">● MICHELIN SELECTION · OPEN TODAY</span>
+              </div>
+            </div>
+            <button class="btn-apply-sample" type="button">Select</button>
+          </div>
+          <div class="sample-desc"><strong>Option 2: Michelin 3-Star Grand Palais</strong> — Royal crest emblem, 3-star rating, and live emerald dining status badge.</div>
+        </div>
+
+        <!-- Sample 3: Art Deco 1920s Gatsby Lounge -->
+        <div class="sample-design-card" data-style-id="style3">
+          <div class="sample-preview-header">
+            <div class="brand brand-sample-3">
+              <div class="brand-crest-deco">◆ LG ◆</div>
+              <div class="brand-text">
+                <span class="brand-name" style="letter-spacing:0.14em; text-transform:uppercase; font-size:1.1rem;">L'ATELIER GOURMET</span>
+                <span class="brand-tagline" style="letter-spacing:0.2em; color:#dfc79e;">BOTANICAL LOUNGE · MCMXXIII</span>
+              </div>
+            </div>
+            <button class="btn-apply-sample" type="button">Select</button>
+          </div>
+          <div class="sample-desc"><strong>Option 3: Art Deco 1920s Gatsby</strong> — Geometric brass diamond monogram with vintage Roman numerals and golden letter spacing.</div>
+        </div>
+
+        <!-- Sample 4: Swiss Minimalist Haute Cuisine -->
+        <div class="sample-design-card" data-style-id="style4">
+          <div class="sample-preview-header">
+            <div class="brand brand-sample-4">
+              <div class="brand-crest-square">A / G</div>
+              <div class="brand-text">
+                <span class="brand-name" style="font-family:var(--sans); font-weight:700; font-size:1.15rem; letter-spacing:-0.03em;">L'Atelier <em style="font-family:var(--serif); font-weight:400; font-style:italic; color:#e5b95f;">Gourmet</em></span>
+                <span class="brand-tagline" style="font-family:var(--mono); font-size:0.58rem; letter-spacing:0.08em; color:var(--ink-soft);">FINE DINING · TABLE SERVICE</span>
+              </div>
+            </div>
+            <button class="btn-apply-sample" type="button">Select</button>
+          </div>
+          <div class="sample-desc"><strong>Option 4: Swiss Minimalist Haute Cuisine</strong> — Clean architectural monogram with modern Inter sans / Playfair italic contrast.</div>
+        </div>
+
+        <!-- Sample 5: Parisian Bistro Gazette -->
+        <div class="sample-design-card" data-style-id="style5">
+          <div class="sample-preview-header">
+            <div class="brand brand-sample-5">
+              <div class="brand-crest-wax">🍷</div>
+              <div class="brand-text">
+                <span class="brand-name" style="font-family:var(--serif); font-size:1.3rem; font-style:italic;">Maison L'Atelier</span>
+                <span class="brand-tagline" style="letter-spacing:0.18em; color:#c87046;">CUISINE SOIGNÉE · CAVE À VINS</span>
+              </div>
+            </div>
+            <button class="btn-apply-sample" type="button">Select</button>
+          </div>
+          <div class="sample-desc"><strong>Option 5: Parisian Bistro Gazette</strong> — Authentic French bistro styling with wine seal stamp and cursive editorial flair.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript App Controller -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
